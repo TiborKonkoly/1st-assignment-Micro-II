@@ -40,15 +40,15 @@ void loop(){
 
   // upozornenie na vysoku koncentraciu plynu
 
-  if(hodnota_plynu_analog >= 205){     // pri koncentraci 20% a viac sa zapne zelena dida
+  if(hodnota_plynu_analog >= 307){     // pri koncentraci 30% a viac sa zapne zelena dida
     digitalWrite(5,HIGH);}
    else{digitalWrite (5,LOW);}
 
-    if (hodnota_plynu_analog >= 307){    // pri koncentracii  30% a viac sa zapne aj zlta dioda
+    if (hodnota_plynu_analog >= 409){    // pri koncentracii  40% a viac sa zapne aj zlta dioda
     digitalWrite(6,HIGH);}
    else{digitalWrite (6,LOW);}
    
-    if(hodnota_plynu_analog >= 409 ){   // // pri koncentracii  40% a viac sa zapne aj  cervena dioda, znamena vysoku koncentraciu plynu
+    if(hodnota_plynu_analog >= 511 ){   // // pri koncentracii  50% a viac sa zapne aj  cervena dioda, znamena vysoku koncentraciu plynu
     digitalWrite(7,HIGH);
     }
     
